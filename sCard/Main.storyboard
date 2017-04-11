@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -496,7 +496,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. English" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5u-iO-qby">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. English" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g5u-iO-qby">
                                 <rect key="frame" x="16" y="90" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -521,15 +521,29 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8ng-Dp-DPY">
+                                <rect key="frame" x="16" y="153" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PbY-Q2-3O8"/>
+                                    <constraint firstAttribute="width" constant="343" id="WXT-bL-p8S"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8ng-Dp-DPY" firstAttribute="leading" secondItem="855-pA-mAa" secondAttribute="leadingMargin" id="11y-YJ-Sqb"/>
                             <constraint firstItem="dop-CF-lum" firstAttribute="centerX" secondItem="855-pA-mAa" secondAttribute="centerX" id="2Sv-7U-RHa"/>
+                            <constraint firstItem="8ng-Dp-DPY" firstAttribute="trailing" secondItem="855-pA-mAa" secondAttribute="trailingMargin" id="2Z8-rg-PO0"/>
                             <constraint firstAttribute="trailing" secondItem="dop-CF-lum" secondAttribute="trailing" id="6FT-lG-3eq"/>
                             <constraint firstItem="dop-CF-lum" firstAttribute="leading" secondItem="855-pA-mAa" secondAttribute="leading" id="KMx-TB-Ehv"/>
                             <constraint firstItem="dop-CF-lum" firstAttribute="top" secondItem="v1r-kH-16X" secondAttribute="bottom" id="TJP-qv-vpr"/>
                             <constraint firstItem="g5u-iO-qby" firstAttribute="leading" secondItem="855-pA-mAa" secondAttribute="leadingMargin" id="VA5-fN-LEM"/>
                             <constraint firstItem="g5u-iO-qby" firstAttribute="trailing" secondItem="855-pA-mAa" secondAttribute="trailingMargin" id="VAe-2j-qwP"/>
+                            <constraint firstItem="g5u-iO-qby" firstAttribute="top" secondItem="dop-CF-lum" secondAttribute="bottom" constant="26" id="VzC-JD-gpN"/>
+                            <constraint firstItem="8ng-Dp-DPY" firstAttribute="top" secondItem="g5u-iO-qby" secondAttribute="bottom" constant="33" id="t3H-Yi-8B0"/>
                         </constraints>
                     </view>
                     <connections>
