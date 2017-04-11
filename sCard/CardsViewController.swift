@@ -12,7 +12,7 @@ class CardsViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var table: UITableView!
     
-    var items: [String] = []
+    var items: [String] = ["We", "Heart", "Swift"]
     
     internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         

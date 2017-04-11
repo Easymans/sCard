@@ -10,7 +10,8 @@ import UIKit
 
 class AddSubject: UIViewController {
     @IBOutlet weak var itemTextField: UITextField!
-    @IBAction func add(_ sender: Any) {
+    
+    @IBAction func done(_ sender: Any) {
         
         let itemsObject = UserDefaults.standard.object(forKey: "items")
         
@@ -19,19 +20,28 @@ class AddSubject: UIViewController {
         if let tempItems = itemsObject as? NSMutableArray {
             
             items = tempItems
-        
+            
             items.addObjects(from: [itemTextField.text!])
-        
+            
         } else {
             
             items = [itemTextField.text!]
-    }
+        }
         
         UserDefaults.standard.set(items, forKey: "items")
         
         itemTextField.text = ""
-    }
+        
+        self.dismiss(animated: true, completion: {})
 
+    }
+    
+    @IBAction func cancel(_ sender: Any) {
+        
+         self.dismiss(animated: true, completion: {})
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
